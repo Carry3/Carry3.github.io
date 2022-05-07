@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.nav li {
+  float: left;
+}
+
+
+.box {
+  width:800px;
+  height: 350px;
+  margin:0 auto;
+  overflow: hidden;
+  padding:10px;
+  border:1px solid #000;
+  position: relative;
+}
+
+.u-add {
+  position: absolute;
+  bottom: 1px;
+  right: 5px;
+  background-color: rgb(23, 167, 4);
+  width: 50px;
+  color: white;
+}
+
+.u-content {
+  display: flex;
+  border:1px solid #000;
+  margin-top: 5px;
+  justify-content: space-between;
+}
+.u-no {
+  border:1px solid #000;
+  font-size: 20px;
+  width: 20px;
+}
+.u-del {
+  border:1px solid #000;
+  font-size: 20px;
+}

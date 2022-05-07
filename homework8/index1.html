@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>lab8-1</title>
+    <script src="jquery.js"></script>
+    <style>
+      @import url("style1.css");
+    </style>
+    <script>
+      $(function () {
+        function zoom(mask, bigimg, smallimg) {
+          this.bigimg = bigimg;
+          this.smallimg = smallimg;
+          this.mask = mask;
+        }
+        zoom.prototype = {
+          init: function () {
+            var that = this;
+            this.smallimgClick();
+            this.maskClick();
+          },
+          smallimgClick: function () {
+            var that = this;
+            $("." + that.smallimg).click(function () {
+              $("." + that.bigimg).css({
+                height: $("." + that.smallimg).height() * 1.5,
+                width: $("." + that.smallimg).width() * 1.5,
+              });
+              $("." + that.mask).fadeIn();
+              $("." + that.bigimg)
+                .attr("src", $(this).attr("src"))
+                .fadeIn();
+            });
+          },
+          maskClick: function () {
+            var that = this;
+            $("." + that.mask).click(function () {
+              $("." + that.bigimg).fadeOut();
+              $("." + that.mask).fadeOut();
+            });
+          },
+        };
+        var obj = new zoom("mask", "bigimg", "smallimg");
+        obj.init();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="nav">
+      <li><a href="index1.html">作业1</a></li>
+      <li><a href="index2.html">作业2</a></li>
+      <li><a href="index3.html">作业3</a></li>
+    </div>
+    <div class="box">
+      <div class="imggroup">
+        <img src="img/img.jpeg" class="smallimg" />
+      </div>
+
+      <div class="imggroup">
+        <img src="img/img.jpeg" class="smallimg" />
+      </div>
+
+      <div class="imggroup">
+        <img src="img/img.jpeg" class="smallimg" />
+      </div>
+
+      <div class="imggroup">
+        <img src="img/img.jpeg" class="smallimg" />
+      </div>
+
+      <div class="imggroup">
+        <img src="img/img.jpeg" class="smallimg" />
+      </div>
+
+      <div class="imggroup">
+        <img src="img/img.jpeg" class="smallimg" />
+      </div>
+
+      <div class="imggroup">
+        <img src="img/img.jpeg" class="smallimg" />
+      </div>
+
+      <div class="imggroup">
+        <img src="img/img.jpeg" class="smallimg" />
+      </div>
+
+      <div class="imggroup">
+        <img src="img/img.jpeg" class="smallimg" />
+      </div>
+
+      <div class="imggroup">
+        <img src="img/img.jpeg" class="smallimg" />
+      </div>
+
+      <div class="imggroup">
+        <img src="img/img.jpeg" class="smallimg" />
+      </div>
+
+      <div class="imggroup">
+        <img src="img/img.jpeg" class="smallimg" />
+      </div>
+    </div>
+    <img src="" class="bigimg" />
+    <div class="mask">
+      <img src="img/close.png" />
+    </div>
+  </body>
+</html>

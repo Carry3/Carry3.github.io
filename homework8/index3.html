@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>lab8-1</title>
+    <script src="jquery.js"></script>
+    <style>
+      @import url("style3.css");
+    </style>
+    <script>
+      $(function () {
+        var num = 0; //总数
+
+        $('body').on('click', '.u-add', (e) => {
+          doAdd(e);
+        })
+
+        $('body').on('click', '.u-del', (e) => {
+          doDel(e);
+        })
+
+        function doAdd(e) {
+          let t = e.currentTarget;
+          let item = `<div class="u-content"><div class="u-no">${++num}</div><div class="u-info"></div><div class="u-del">Delete</div></div>`
+          $(t).prev().append(item);
+        }
+
+        function doDel(e) {
+          let t = e.currentTarget;
+          $(t).parent().remove();
+          num --;
+          upload();
+        }
+
+        //修正序号
+        function upload() {
+          let contentList = $('.m-data').children();
+          let i = num;
+          contentList.map((index,item)=>{
+            $(item).find('.u-no').text(num - (--i));
+          })
+        }
+      });
+    </script>
+  </head>
+  <body>
+	<div class="nav">
+        <li><a href="index1.html">作业1</a></li>
+        <li><a href="index2.html">作业2</a></li>
+        <li><a href="index3.html">作业3</a></li>
+    </div>
+    <!-- html代码 -->
+  <div class="box">
+  	<div class="m-data"></div>
+    <div class="u-add">添加</div>
+  </div>
+
+  </body>
+</html>

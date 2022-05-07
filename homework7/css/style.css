@@ -1,0 +1,148 @@
+a {
+    color: #004b9b;
+    text-decoration: underline;
+}
+
+.wrapper {
+    width: 990px;
+    margin: 0 auto;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+}
+
+header {
+    border-bottom: 4px solid #2589c2;
+    line-height: 1.3em;
+    padding-top: 3px;
+}
+
+header h3 {
+    float: left;
+    width: 79px;
+    margin-right: 1px;
+    margin-top: 2px;
+    padding: 5px 0 1px 0;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    background-color: #2589c2;
+}
+
+header p {
+    background-color: #f76f49;
+    border-radius: 2px;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin: 2px 0 0 4px;
+    text-align: center;
+    width: 20px;
+}
+
+header a {
+    color: #004b9b;
+    float: right;
+    margin-left: 10px;
+    padding: 2px 8px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #b2b2b2;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+.data {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: -webkit-linear-gradient(top, #FEFEFE, #F7F7F7);
+    line-height: 1.2em;
+    margin: 0;
+    font-size: 15px;
+}
+
+.data_tm {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 3px;
+}
+
+.data_total {
+    float: left;
+    padding: 0;
+}
+
+.data dl {
+    float: left;
+    padding: 3px 25px 0 0;
+}
+
+.data dt {
+    float: left;
+}
+
+.data dd {
+    display: inline;
+    margin-left: 5px;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+.mono {
+    margin: 0;
+}
+
+.mono div {
+    background: #cfdce8;
+    color: #6e9eb5;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.2em;
+    border: 1px solid #fff;
+    border-width: 0 1px 1px 0;
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+}
+
+.stop {
+    background: #e5e5e5;
+}
+
+.stop strong {
+    font-size: 1.2em;
+    padding-left: 4px;
+}
+
+.time {
+    height: 45px;
+    text-align: center;
+    margin: 0;
+}
+
+.time div {
+    text-align: center;
+    line-height: 1.2em;
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+}
+
+.time .bod {
+    border-left: 1px solid #cfdce8;
+    border-right: 1px solid #cfdce8;
+    line-height: 45px;
+}
+
+.line_border {
+    top: 0;
+    left: 0;
+    height: 45px;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    box-sizing: content-box;
+    width: 5px;
+}
