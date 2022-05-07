@@ -7,7 +7,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 <div>
       <li><a href="./homework2/shiyan2.html">homework2</a></li>
       <li><a href="./homework4/index.html">homework4</a></li>
-      <li><a href="./homework5/index.html">homework5</a></li>
+      <li><a href="./homework3/shiyan3.html">homework5</a></li>
       <li><a href="./homework7/index.html">homework7</a></li>
       <li><a href="./homework8/index1.html">homework8</a></li>
       <li><a href="./homework9/index1.html">homework9</a></li>
